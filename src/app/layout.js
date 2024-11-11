@@ -22,9 +22,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <header className="bg-red-300 text-center py-8 text-black">
+        <header className="text-center py-8 text-black">
           <nav>
-            <ul className="flex justify-center gap-4">
+            <ul className="flex justify-end gap-4 max-w-screen-xl mx-auto">
               <li>
                 <Link href="/">Home</Link>
               </li>
@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
             </ul>
           </nav>
         </header>
-        {children}
+        <main className="max-w-screen-xl mx-auto">{children}</main>
       </body>
     </html>
   );
