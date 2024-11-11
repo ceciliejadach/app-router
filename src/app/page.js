@@ -11,6 +11,7 @@ export default async function Home() {
           <div className="grid">
             <strong>
               <Link href={`/detaljer/${recipe.id}`}>{recipe.name}</Link>
+              <Image src={`${recipe.image}`} alt="Picture of the dish" width={500} height={500} />
             </strong>
           </div>
         </li>
